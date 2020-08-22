@@ -7,5 +7,8 @@ function trimFirstAndLastStrChars(str) {
     return newStr;
 }
 
+const trimFirstAndLastStrChars2 = (str) => str.slice(1, str.length - 1);
+
 console.log(trimFirstAndLastStrChars("atalia"));
 console.log(trimFirstAndLastStrChars("Hello World"));
+console.log(trimFirstAndLastStrChars2("atalia"));
