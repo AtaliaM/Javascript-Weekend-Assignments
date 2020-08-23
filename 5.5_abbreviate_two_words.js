@@ -10,6 +10,7 @@ function convertNameToInitials(name) {
     }
 
     console.log(initials);
+    return initials;
 }
 
 convertNameToInitials("atalia mucharsky");

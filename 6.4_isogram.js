@@ -1,8 +1,4 @@
 const isIsogram = (str) => {
-    
-    if (!str.length) {
-        return true;
-    }
 
     str = str.toLowerCase();
 
