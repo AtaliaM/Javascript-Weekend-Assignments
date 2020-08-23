@@ -1,10 +1,14 @@
+//it can be a good idea to send the callback function parametes like this: if(testFunc(arr, i, arr[i]))
+//so if in my callback func I want to do something with i (the position) or the entire collection and not only with arr[i],
+//I send all ofthem as parameters to the callback func anyways.
+
 ///// My Filter /////
 let equalOrBiggerThanFive = (input) => input >=5;
 
 const myFilter = (arr, testFunc) => {
     let output = [];
     for (let i = 0; i < arr.length; i++) {
-        if(testFunc(arr[i])) {
+        if(testFunc(arr[i], arr, i)) { //<==== sending all this information in case another callback function needs it
             output.push(arr[i]);
         }
     }
